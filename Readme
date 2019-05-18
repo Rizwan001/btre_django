@@ -1,0 +1,49 @@
+python -m venv ./venv
+d:/Python/btre_project/venv/Scripts/activate.bat
+pip freeze
+pip install django
+django-admin help
+django-admin startproject btre .
+python manage.py runserver
+python manage.py startapp pages // it will create new folder with the name of pages
+pip install autopep8
+python manage.py collectstatic
+python manage.py startapp listings
+python manage.py startapp realtors
+
+// Install postgress packages
+pip install psycopg2
+pip install psycopg2-binary
+
+// Run unapplied migartions 
+python manage.py migrate
+
+// In order to use ImageField you need to install Pillow packages
+pip install Pillow
+
+// Run newly created migartions
+python manage.py makemigrations
+python manage.py migrate
+
+// Class has no objects member error
+pip install pylint-django
+
+// Get Help from python 
+python manage.py help 
+
+// Create a superUser in python 
+python manage.py createsuperuser
+ 
+
+// After making changes in main static folder run below command again
+python manage.py collectstatic
+
+
+// Authentication 
+python manage.py startapp accounts
+
+// After adding new model run migration as below
+
+python manage.py makemigrations contacts 
+python manage.py migrate
+
